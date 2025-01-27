@@ -11,6 +11,7 @@ resource "aws_security_group" "main" {
         to_port  = ingress.value.to_port
     }
   }
+  
   tags = merge(
     var.common_tags,
     {
