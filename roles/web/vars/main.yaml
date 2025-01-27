@@ -1,5 +1,6 @@
-CATALOGUE_HOST: catalogue.joindevops.online
-USER_HOST: user.joindevops.online
-SHIPPING_HOST: shipping.joindevops.online
-CART_HOST: cart.joindevops.online
-PAYMENT_HOST: payment.joindevops.online
+
+CATALOGUE_HOST: catalogue.bomma.store
+USER_HOST: user.bomma.store
+SHIPPING_HOST: shipping.bomma.store
+CART_HOST: cart.bomma.store
+PAYMENT_HOST: payment.bomma.store
