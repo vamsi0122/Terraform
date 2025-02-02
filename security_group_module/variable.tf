@@ -1,22 +1,26 @@
-variable "security_group_name" {
-
-}
-variable "sg_description" {
+variable "project_name" {
   
+}
+variable "sg_name" {
+  
+}
+
+variable "sg_description" {
+  default = ""
 }
 
 variable "vpc_id" {
   
 }
-variable "project_name" {
-  
-}
-variable "env" {
-  
-}
-variable "common_tags" {
-  
-}
+
 variable "sg_ingress_rules" {
-  
+  default = []
+}
+
+variable "common_tags" {
+  default = {}
+}
+
+variable "sg_tags" {
+  default = {}
 }

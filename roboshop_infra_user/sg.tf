@@ -7,5 +7,4 @@ module "sg_group" {
   sg_ingress_rules = var.sg_ingress_rules
   vpc_id = local.vpc_id
   security_group_name = "Allow_all"
-
 }
