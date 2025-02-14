@@ -14,3 +14,9 @@ data "aws_ami" "custom_ami_centos" {
 data "http" "myip" {
   url = "https://ipv4.icanhazip.com"
 }
+
+data "aws_ssm_parameter" "vpn_sg_id" {
+  name = "/${var.project_name}/${var.env}/vpn_sg_id"
+}
+
+

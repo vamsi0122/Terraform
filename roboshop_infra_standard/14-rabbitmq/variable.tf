@@ -12,10 +12,14 @@ variable "common_tags" {
     Project = "RoboShop"
     Environment = "Production"
     Terrform = "true"
-    component = "mongodb"
+    component = "rabbitmq"
   }
 }
 
 variable "sg_description" {
-  default = "This is created in mongodb"
+  default = "This is created in rabbitmq"
+}
+
+variable "zone_name" {
+  default = "bomma.store"
 }
