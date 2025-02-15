@@ -30,6 +30,6 @@ pipeline {
                     terraform plan
                 '''
             }
-        
+        }
     }
 }
