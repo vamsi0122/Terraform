@@ -17,6 +17,17 @@ pipeline {
                     terraform init
                 '''
             }
+        stage('Plan'){
+            steps {
+                sh'''
+                    ip a
+                    cd roboshop_infra_standard/01-vpc
+                    ls -ltr
+                    pwd
+                    terraform plan
+                '''
+            }
+        }
         }
     }
 }
