@@ -17,6 +17,9 @@ pipeline {
                     terraform init
                 '''
             }
+        }
+    
+
         stage('Plan'){
             steps {
                 sh'''
@@ -27,7 +30,6 @@ pipeline {
                     terraform plan
                 '''
             }
-        }
-        }
+        
     }
 }
