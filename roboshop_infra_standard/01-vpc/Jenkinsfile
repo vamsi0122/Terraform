@@ -1,13 +1,13 @@
 pipeline {
-    node { 'Agent-1' }
+    agent { node { label 'AGENT-1' } }
     
     options {
         ansiColor('xterm')
     }
 
-    stages{
+    stages {
         stage('Init'){
-            steps{
+            steps {
                 sh'''
                     cd 01-vpc
                     ls -ltr
@@ -17,8 +17,4 @@ pipeline {
             }
         }
     }
-
-
-
-
 }
