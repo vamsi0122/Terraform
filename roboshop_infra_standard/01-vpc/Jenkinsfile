@@ -1,4 +1,4 @@
-pipeline{
+pipeline {
     node { 'Agent-1' }
     
     options {
@@ -18,7 +18,7 @@ pipeline{
         }
     }
 
-    
+
 
 
 }
