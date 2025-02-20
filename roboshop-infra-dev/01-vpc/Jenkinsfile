@@ -1,0 +1,33 @@
+pipeline {
+    agent { node { label 'Agent-1' } }
+    
+    options {
+        ansiColor('xterm') // This will apply ANSI color to the entire pipeline output
+    }
+
+    stages {
+        stage('Init') {
+            steps {
+                sh '''
+                    ip a
+                    cd roboshop_infra_standard/01-vpc
+                    ls -ltr
+                    pwd
+                    terraform init
+                '''
+            }
+        }
+
+        stage('Plan') {
+            steps {
+                sh '''
+                    ip a
+                    cd roboshop_infra_standard/01-vpc
+                    ls -ltr
+                    pwd
+                    terraform plan
+                '''
+            }
+        }
+    }
+}
